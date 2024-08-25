@@ -15,7 +15,6 @@ export type Response = {
 };
 
 router.post("/funds", (request, response) => {
-  console.log(request.headers);
   const uniqueid = String(request.headers.uniqueid);
 
   if (uniqueid === "undefined") {
